@@ -151,10 +151,15 @@ public class ArtistRegistration extends AppCompatActivity implements View.OnClic
                     Toast.makeText(this, "Added Service for Hair", Toast.LENGTH_SHORT).show();
                     services.add("Hair");
                     if(services.size() > 0){
-                        Toast.makeText(this, services.size(), Toast.LENGTH_SHORT).show();
+                        register.setEnabled(true);
+                        register.setBackgroundResource(R.drawable.round_button);
+                        check2.setVisibility(View.VISIBLE);
+                        //Toast.makeText(this, "Not empty", Toast.LENGTH_SHORT).show();
                     }
                     else{
-                        Toast.makeText(this, "Empty", Toast.LENGTH_SHORT).show();
+                        register.setEnabled(false);
+                        register.setBackgroundResource(R.drawable.disable_button);
+                        check2.setVisibility(View.GONE);
                     }
 //                    register.setEnabled(true);
 //                    register.setBackgroundResource(R.drawable.round_button);
@@ -162,12 +167,18 @@ public class ArtistRegistration extends AppCompatActivity implements View.OnClic
                     break;
                 }
                 else{
+                    services.remove("Hair");
                     Toast.makeText(this, "Removed Service for Hair", Toast.LENGTH_SHORT).show();
                     if(services.size() > 0){
-                        Toast.makeText(this, services.size(), Toast.LENGTH_SHORT).show();
+                        register.setEnabled(true);
+                        register.setBackgroundResource(R.drawable.round_button);
+                        check2.setVisibility(View.VISIBLE);
+                        //Toast.makeText(this, "Not empty", Toast.LENGTH_SHORT).show();
                     }
                     else{
-                        Toast.makeText(this, "Empty", Toast.LENGTH_SHORT).show();
+                        register.setEnabled(false);
+                        register.setBackgroundResource(R.drawable.disable_button);
+                        check2.setVisibility(View.GONE);
                     }
                     break;
                 }
@@ -178,10 +189,14 @@ public class ArtistRegistration extends AppCompatActivity implements View.OnClic
                     services.add("Makeup");
 
                     if(services.size() > 0){
-                        Toast.makeText(this, services.size(), Toast.LENGTH_SHORT).show();
+                        register.setEnabled(true);
+                        register.setBackgroundResource(R.drawable.round_button);
+                        check2.setVisibility(View.VISIBLE);
                     }
                     else{
-                        Toast.makeText(this, "Empty", Toast.LENGTH_SHORT).show();
+                        register.setEnabled(false);
+                        register.setBackgroundResource(R.drawable.disable_button);
+                        check2.setVisibility(View.GONE);
                     }
 //                    register.setEnabled(true);
 //                    register.setBackgroundResource(R.drawable.round_button);
@@ -189,12 +204,17 @@ public class ArtistRegistration extends AppCompatActivity implements View.OnClic
                     break;
                 }
                 else{
+                    services.remove("Makeup");
                     Toast.makeText(this, "Removed Service for Makeup", Toast.LENGTH_SHORT).show();
                     if(services.size() > 0){
-                        Toast.makeText(this, services.size(), Toast.LENGTH_SHORT).show();
+                        register.setEnabled(true);
+                        register.setBackgroundResource(R.drawable.round_button);
+                        check2.setVisibility(View.VISIBLE);
                     }
                     else{
-                        Toast.makeText(this, "Empty", Toast.LENGTH_SHORT).show();
+                        register.setEnabled(false);
+                        register.setBackgroundResource(R.drawable.disable_button);
+                        check2.setVisibility(View.GONE);
                     }
                     break;
                 }
