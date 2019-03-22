@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMYAS"
+        android:textSize="60sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardElevation="8dp"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="35dp"
+            android:layout_margin="20dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Username"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:inputType="textEmailAddress"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:inputType="textPassword"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/signupUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Need an account? Sign up"
+            android:textStyle="bold"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="130dp"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="Login"
+            android:textSize="20sp"
+            android:textColor="#fefefe"
+            android:layout_marginTop="320dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:id="@+id/signupArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Artist? Click here"
+            android:textStyle="bold"
+            android:layout_marginTop="400dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            />
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
