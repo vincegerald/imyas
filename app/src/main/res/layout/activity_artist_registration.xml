@@ -172,6 +172,38 @@
 
             </android.support.design.widget.TextInputLayout>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Gender"
+                android:textSize="22sp"
+                android:layout_margin="10dp"/>
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="20dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="20dp"
+                    android:layout_weight="1"/>
+
+            </RadioGroup>
+
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/passwordLayout"
                 android:layout_width="match_parent"
@@ -193,6 +225,10 @@
                     android:paddingBottom="15dp" />
 
             </android.support.design.widget.TextInputLayout>
+
+
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"

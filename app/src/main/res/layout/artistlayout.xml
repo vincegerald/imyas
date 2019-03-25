@@ -1,0 +1,48 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/finalCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/artistImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/ic_account_circle_black_24dp"/>
+
+        <TextView
+            android:id="@+id/artistName"
+            android:layout_below="@+id/artistImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clint Jhuneil Appare"
+            android:textSize="22sp"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"/>
+
+        <RatingBar
+            android:id="@+id/artistRating"
+            android:layout_below="@+id/artistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stepSize="0.5"
+            android:numStars="5"
+            android:focusable="false"
+            android:clickable="false"
+            android:isIndicator="true"
+            android:rating="5"
+            android:layout_marginLeft="20dp"
+            android:progressTint="@color/goldenYellow"
+            android:secondaryProgressTint="@color/goldenYellow"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

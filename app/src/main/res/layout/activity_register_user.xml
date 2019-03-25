@@ -142,6 +142,7 @@
             android:layout_marginBottom="20dp">
 
             <Button
+
                 android:layout_weight="1"
                 android:id="@+id/register"
                 android:layout_width="wrap_content"
@@ -151,7 +152,14 @@
                 android:textColor="#fefefe"
                 android:paddingRight="25dp"
                 android:paddingLeft="25dp"
-                android:layout_marginRight="30dp"/>
+                android:layout_marginRight="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
 
             <Button
                 android:layout_weight="1"
@@ -160,6 +168,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/round_button"
                 android:text="Cancel"
+                android:layout_marginLeft="10dp"
                 android:textColor="#fefefe"
                 android:paddingRight="25dp"
                 android:paddingLeft="25dp"/>
@@ -167,5 +176,8 @@
         </LinearLayout>
 
     </RelativeLayout>
+
+
+
 
 </ScrollView>
