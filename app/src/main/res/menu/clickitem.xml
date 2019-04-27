@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Profile"/>
+
+    <item
+        android:id="@+id/portfolio"
+        android:icon="@drawable/videosandimages"
+        android:title="Portfolio"/>
+
+    <item
+        android:id="@+id/review"
+        android:icon="@drawable/custreview"
+        android:title="Customer Review"/>
+
+    <item
+        android:id="@+id/book"
+        android:icon="@drawable/reserve"
+        android:title="Book"/>
+
+
+
+</menu>

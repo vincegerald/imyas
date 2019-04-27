@@ -20,12 +20,37 @@
         <TextView
             android:id="@+id/artistName"
             android:layout_below="@+id/artistImage"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Clint Jhuneil Appare"
             android:textSize="22sp"
             android:gravity="left"
             android:layout_marginLeft="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_below="@+id/artistImage"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/makeup"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/makeover"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/hair"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/salon"
+                android:visibility="gone"
+                />
+        </LinearLayout>
 
         <RatingBar
             android:id="@+id/artistRating"
@@ -41,7 +66,9 @@
             android:layout_marginLeft="20dp"
             android:progressTint="@color/goldenYellow"
             android:secondaryProgressTint="@color/goldenYellow"
-            />
+            style="?android:attr/ratingBarStyleIndicator" />
+
+
 
     </RelativeLayout>
 

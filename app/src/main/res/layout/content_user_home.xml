@@ -18,22 +18,12 @@
         android:layout_margin="5dp"
         />
 
-    <TextView
-        android:id="@+id/artists"
-        android:layout_below="@+id/search"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Artists"
-        android:textSize="50sp"
-        android:layout_marginTop="20dp"/>
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/artistsList"
-        android:layout_below="@+id/artists"
+        android:layout_below="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         />
 
 

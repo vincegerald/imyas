@@ -5,6 +5,8 @@ public class ArtistModel {
     private String id, firstname, lastname, contactNumber, image, email, gender, password, hair, makeUp;
     private Double rating;
 
+    public ArtistModel() {
+    }
 
     public ArtistModel(String id, String firstname, String lastname, String contactNumber, String image, String email, String gender, String password, String hair, String makeUp, Double rating) {
         this.id = id;
