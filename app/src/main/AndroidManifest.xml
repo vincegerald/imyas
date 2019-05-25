@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ClickActivity"></activity>
+        <activity android:name=".ArtistProfileActivity" />
+        <activity android:name=".ViewAlbumActivity" />
+        <activity android:name=".ClickActivity" />
         <activity
             android:name=".ArtistHome"
             android:label="@string/title_activity_artist_home"

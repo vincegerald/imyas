@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/portfolioProfileCard"
+    android:layout_width="160dp"
+    android:layout_height="270dp"
+    android:layout_margin="5dp"
+    card_view:cardElevation="2dp">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:background="#fff">
+
+       <ImageView
+           android:id="@+id/portfolioProfileImage"
+           android:layout_width="match_parent"
+           android:layout_height="220dp"
+           android:scaleType="centerCrop"
+           android:src="@drawable/user"/>
+
+       <TextView
+           android:id="@+id/portfolioName"
+           android:layout_below="@+id/portfolioProfileImage"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:textSize="20dp"
+           android:text="Name here"
+           android:gravity="center"/>
+
+
+   </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ArtistProfileActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/profileToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7EC0EE">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:background="#7EC0EE"/>
+
+    </android.support.v7.widget.Toolbar>
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/profileImage"
+    android:layout_below="@+id/profileToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:src="@drawable/user"
+    android:layout_marginTop="30dp"
+    />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_below="@+id/profileImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name here"
+        android:gravity="center"
+        android:textSize="28sp"
+        />
+
+    <TextView
+        android:id="@+id/profileDescription"
+        android:layout_below="@+id/profileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Some Description Here"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/portfolioList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileDescription"
+        android:layout_marginTop="50dp"/>
+
+
+</RelativeLayout>
